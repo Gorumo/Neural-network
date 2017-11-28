@@ -1,13 +1,13 @@
 import numpy as np
 import math
 
-direction = 0.0
-level = 0.0
-competency = 1.0
+direction = 0.0 #совпадение курса и оса 0 или 1
+level = 1.0
+competency = 1.0 #
 
 weight_d = 0.6
 weight_l = 0.6
-weight_c = 0.3
+weight_c = 0.2
 
 
 def activation(x):
