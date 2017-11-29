@@ -1,0 +1,43 @@
+[
+  {
+    "Directions": "01.03.02 Прикладная математика и информатика",
+    "Course_direction_match": [
+    	"https://openedu.ru/course/hse/GSOC/",
+    	"https://openedu.ru/course/mipt/GAMETH/", 
+    	"https://openedu.ru/course/spbstu/MODIEL/", 
+    	"https://openedu.ru/course/urfu/ENGM/", 
+    	"https://openedu.ru/course/urfu/METR/", 
+    	"https://openedu.ru/course/urfu/PHILS/", 
+    	"https://openedu.ru/course/mipt/GRAPHTH/", 
+    	"https://openedu.ru/course/mipt/PROBTH/", 
+    	"https://openedu.ru/course/hse/ECONOM/", 
+    	"https://openedu.ru/course/hse/FINEC/", 
+    	"https://openedu.ru/course/hse/METRIX/", 
+    	"https://openedu.ru/course/misis/SAFETY/", 
+    	"https://openedu.ru/course/spbstu/PHYLOS/", 
+    	"https://openedu.ru/course/spbstu/PHYSCUL/", 
+    	"https://openedu.ru/course/msu/CALCSV/", 
+    	"https://openedu.ru/course/urfu/RUBSCULT/", 
+    	"https://openedu.ru/course/msu/ANGEOM/", 
+    	"https://openedu.ru/course/hse/DATPRO/", 
+    	"https://openedu.ru/course/spbu/MATGR/", 
+    	"https://openedu.ru/course/spbstu/LTARG/", 
+    	"https://openedu.ru/course/mipt/HIGHMATH2/", 
+    	"https://openedu.ru/course/mipt/GRAPHS1/", 
+    	"https://openedu.ru/course/mipt/ADV_GRAPHS/", 
+    	"https://openedu.ru/course/mipt/TEORCOD/", 
+    	"https://openedu.ru/course/mipt/PHILTECH/", 
+    	"https://openedu.ru/course/mipt/MATAN/", 
+    	"https://openedu.ru/course/msu/MATHAN/", 
+    	"https://openedu.ru/course/mipt/WEBGRAPH/", 
+    	"https://openedu.ru/course/urfu/INTROBE"
+    	],
+    "Course_competence_match": [
+    	"https://openedu.ru/course/spbu/MATGR/", 
+    	"https://openedu.ru/course/spbstu/LTARG/", 
+    	"https://openedu.ru/course/mipt/HIGHMATH2/", 
+    	"https://openedu.ru/course/mipt/GRAPHS1/", 
+    	"https://openedu.ru/course/mipt/ADV_GRAPHS/", 
+    	]
+
+
