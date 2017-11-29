@@ -9,56 +9,41 @@ match_dict={}
 course_array=[]
 match_array=[]
 
+#function for matching os direction and course direction indexes
 def similar(a, b):
 	return SequenceMatcher(None, a, b).ratio()
-
+#function to delete dublicates from array
 def unique(lst):
-    seen = set()
-    result = []
-    for x in lst:
-        if x in seen:
-            continue
-        seen.add(x)
-        result.append(x)
-    return result
-
+	seen = set()
+	result = []
+	for x in lst:
+		if x in seen:
+			continue
+		seen.add(x)
+		result.append(x)
+	return result
+k=0
+#parsings of jsons and matching OS and courses by Direction
 for os_direct in range(len(standarts)):
-	#print (os_direct["Directions"])
-	match_dict.clear()
+	match_dict={}
+	course_array_new=[]
 	course_array=[]
 	for course_direct_arrays in range(len(data)):
 		for course_direct in range(len(data[course_direct_arrays]["Directions"])):
 			if similar(data[course_direct_arrays]["Directions"][course_direct][:3], standarts[os_direct]["Directions"][:3]) > 0.99:
-				#print (data[course_direct_arrays]["URL"] + "----" + standarts[os_direct]["Directions"])
 				course_array.append(data[course_direct_arrays]["URL"])
-	course_array_new = unique(course_array)
-		#course_array_new = [el for el, _ in groupby(course_array)]
-	#print (course_array_new)
+	
+	k=k+1
+	match_dict["id"]=k
 	match_dict["Directions"] = standarts[os_direct]["Directions"]
+	course_array_new = unique(course_array)
 	match_dict["Course_direction_match"]=course_array_new
 	match_array.append(match_dict)
+	
 
-print(match_array)
-
-#print (json.dumps(match_array))
-
-
-
-
-
-#for i in range(len(standarts)):
-    #for j in range(len(standarts[i]["Competence"])):
-        #for k in range(len(data)):
-        # if standarts[i]["Competence"][j] in data[k]["Competence"]:
-        #print(fuzz.token_sort_ratio(b, a))
-            
-
-        	#for courses
-            #for direct in range(len(data[k]["Directions"])):
-            	#print(data[k]["Title"] + '  ------  ' + data[k]["Directions"][direct])
-            	
-            
-                #for n in range(len(data[k]["Competence"])):
-                    #similarity = fuzz.partial_ratio(standarts[i]["Competence"][j], data[k]["Competence"][n])
-                    #if similarity >60:
-                        #print(standarts[i]["Competence"][j], ' - ',similarity, ' from ',data[k]["Title"])
+#After all we have an array of OS directions and fitable courses
+for m in range(len(match_array)):
+	print(match_array[m]["id"])
+	print(match_array[m]["Directions"])
+	print(match_array[m]["Course_direction_match"])
+	
